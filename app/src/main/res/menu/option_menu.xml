@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/aboutUs"
+        android:title="AboutUs"
+        android:icon="@drawable/ic_error"
+        app:showAsAction="always"
+         />
+    <item
+        android:id="@+id/chat"
+        android:title="Chat"
+        android:icon="@drawable/ic_chat"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/photo_duel"
+        android:title="Duel"
+        android:icon="@drawable/ic_duel"
+        app:showAsAction="always" />
+
+
+</menu>

@@ -1,0 +1,115 @@
+<!-- File: res/layout/item_post_duel.xml -->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Image 1 -->
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"/>
+
+    <!-- Image 2 -->
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Guideline for Image Separation -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <!-- Caption for Image 1 -->
+    <TextView
+        android:id="@+id/caption1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Caption 1"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        app:layout_constraintStart_toStartOf="@id/image1"
+        app:layout_constraintEnd_toEndOf="@id/image1"
+        android:paddingTop="4dp"/>
+
+    <!-- Caption for Image 2 -->
+    <TextView
+        android:id="@+id/caption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Caption 2"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/image2"
+        app:layout_constraintStart_toStartOf="@id/image2"
+        app:layout_constraintEnd_toEndOf="@id/image2"
+        android:paddingTop="4dp"/>
+
+    <!-- Vote Button for Image 1 -->
+    <Button
+        android:id="@+id/vote1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote 1"
+        app:layout_constraintTop_toBottomOf="@id/caption1"
+        app:layout_constraintStart_toStartOf="@id/caption1"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Vote Count for Image 1 -->
+    <TextView
+        android:id="@+id/votes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votes: 0"
+        app:layout_constraintTop_toBottomOf="@id/vote1"
+        app:layout_constraintStart_toStartOf="@id/vote1"
+        android:paddingTop="4dp"/>
+
+    <!-- Vote Button for Image 2 -->
+    <Button
+        android:id="@+id/vote2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote 2"
+        app:layout_constraintTop_toBottomOf="@id/caption2"
+        app:layout_constraintStart_toStartOf="@id/caption2"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Vote Count for Image 2 -->
+    <TextView
+        android:id="@+id/votes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votes: 0"
+        app:layout_constraintTop_toBottomOf="@id/vote2"
+        app:layout_constraintStart_toStartOf="@id/vote2"
+        android:paddingTop="4dp"/>
+
+    <!-- Winner Text -->
+    <TextView
+        android:id="@+id/winnerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/votes1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">LinkUp</string>
+    <string name="instademo">LinkUp</string>
+    <string name="default_web_client_id">com.example.instademo</string>
+
+    <!-- string for showing the text "Forgot your login details-->
+    <string name="forgot"><font color='c4c4c4'>Forgot your login details? </font><b>Get help logging in.</b></string>
+    <!-- string to show the text " Dont have an account-->
+    <string name="sign_up"><font color='c4c4c4'>Dont have an account? </font><b>Sign up.</b></string>
+    <string name="log_in">Log In</string>
+    <string name="log_in_with_google">Log in with Google</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="enter_caption">Enter caption</string>
+    <string name="cancel">Cancel</string>
+    <string name="post">Post</string>
+    <string name="LoremIpsum">Your image may appear as a post and can be seen by others</string>
+    <string name="share_to_post">Share To Post</string>
+    <string name="play_pause">Play_Pause</string>
+    <string name="unknown_user">No name</string>
+    <string name="follow">Follow</string>
+    <string name="HomeActivity">LinkUp</string>
+
+    <string name="home_activity_label">Home</string>
+    <string name="About_me">Hello! I\'m Aadarsh Chaurasia, a fourth-year B.Tech student specializing in Computer Science and Engineering at JSS Academy of Technical Education, NOIDA. I have a passion for Android development and have worked on several projects utilizing Kotlin, XML, and various development tools. </string>
+</resources>

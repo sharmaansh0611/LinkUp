@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "272372736530",
+    "project_id": "instademo-65fdf",
+    "storage_bucket": "instademo-65fdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272372736530:android:eca25ccf670c92a532aecb",
+        "android_client_info": {
+          "package_name": "com.example.instademo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272372736530-90bsgl3qplaiddnetjfffd96dj05m0mo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.instademo",
+            "certificate_hash": "1e0b56d43181b931a25aca0e2d78b0873257083e"
+          }
+        },
+        {
+          "client_id": "272372736530-hjb10gvnveacuem5magv5p8kbk2tah7p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGDfsnmxLMAZIGoCKdm3LS948qKCocIOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272372736530-hjb10gvnveacuem5magv5p8kbk2tah7p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

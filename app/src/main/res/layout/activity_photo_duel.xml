@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoDuelActivity">
+
+    <!-- Warning -->
+    <TextView
+        android:id="@+id/warning_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do not compare humans"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- First Image -->
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        android:contentDescription="First Image"
+        app:layout_constraintTop_toBottomOf="@+id/warning_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Caption for First Image -->
+    <EditText
+        android:id="@+id/caption1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Add Caption for Image 1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Second Image -->
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        android:contentDescription="Second Image"
+        app:layout_constraintTop_toBottomOf="@+id/caption1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Caption for Second Image -->
+    <EditText
+        android:id="@+id/caption2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Add Caption for Image 2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/image2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Time Limit for Duel -->
+    <EditText
+        android:id="@+id/time_limit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter time limit in minutes"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/caption2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Post Button -->
+    <Button
+        android:id="@+id/btn_post_duel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Duel"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/time_limit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
